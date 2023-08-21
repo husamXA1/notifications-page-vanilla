@@ -130,7 +130,7 @@ body {
         background-color: hsl(205, 33%, 90%);
     }
     .notifications-page {
-        margin-top: 100px;
+        margin: 100px auto;
         padding: 1em;
     }
 }
