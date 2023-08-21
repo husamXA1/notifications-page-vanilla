@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url('./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Plus Jakarta Sans";
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.notifications-page {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.page-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.notifications-count {
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    padding: 0 0.5em;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.mark-btn {
+    border: none;
+    background: none;
+    color: hsl(219, 12%, 42%);
+    font-size: 1rem;
+}
+
+.notification-card {
+    padding: 0.5em;
+    margin: 1em 0;
+    border-radius: 1em;
+    gap: 1em;
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.9rem;
+}
+
+.notification-card.unread {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.notification-card.unread .message::after {
+    content: '';
+    width: 0.5em;
+    height: 0.5em;
+    background-color: hsl(1, 90%, 64%);
+    display: inline-block;
+    margin-left: 0.5em;
+    border-radius: 1em;
+}
+
+.profile-picture {
+    width: 40px;
+}
+
+.message {
+    color: hsl(219, 12%, 42%);
+}
+
+.message strong {
+    color: black;
+}
+
+.message a {
+    text-decoration: none;
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+
+.time {
+    color: hsl(219, 14%, 63%);
+}
+
+.preview-card {
+    padding: 1em;
+    border: 1px solid hsl(211, 68%, 94%);
+    color: hsl(219, 12%, 42%);
+    border-radius: 5px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.preview-card:hover {
+    background-color: hsl(205, 33%, 90%);
+}
+
+.chess-image {
+    width: 50px;
+    margin-left: auto;
+}
+
+@media (min-width: 850px) {
+    body {
+        background-color: hsl(205, 33%, 90%);
+    }
+    .notifications-page {
+        margin-top: 100px;
+        padding: 1em;
+    }
+}
